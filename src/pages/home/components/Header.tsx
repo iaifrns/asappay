@@ -1,3 +1,4 @@
+import { PhoneHeaderContent } from "../../../components/PhoneContent";
 import TopMenu from "../../../components/TopMenu";
 import { shapes } from "../../../constants/images";
 
@@ -21,6 +22,7 @@ const Header = () => {
       <HeaderBackgound />
       <div className="container z-10 py-8">
         <TopMenu />
+        <PhoneHeaderContent />
       </div>
     </div>
   );
