@@ -1,10 +1,14 @@
-function App() {
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/home";
 
+function App() {
   return (
-    <>
-      <p className="font-bold text-6xl">asappay website project</p>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
